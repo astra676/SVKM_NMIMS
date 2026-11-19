@@ -1,0 +1,10 @@
+import java.util.*;
+class Q19 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a[]={10,20,30};
+        try { System.out.println(a[sc.nextInt()]); }
+        catch(ArrayIndexOutOfBoundsException e) { System.out.println("Invalid Index"); }
+        finally { System.out.println("Finally executed"); }
+    }
+}

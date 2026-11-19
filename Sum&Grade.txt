@@ -1,0 +1,17 @@
+import java.util.*;
+class Q7 {
+    static void grade(double p) {
+        if(p>=90) System.out.println("A");
+        else if(p>=75) System.out.println("B");
+        else if(p>=60) System.out.println("C");
+        else if(p>=40) System.out.println("D");
+        else System.out.println("Fail");
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n,sum=0;
+        while((n=sc.nextInt())>=0) sum+=n;
+        System.out.println("Sum = "+sum);
+        grade(sc.nextDouble());
+    }
+}

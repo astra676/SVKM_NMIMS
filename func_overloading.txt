@@ -1,0 +1,10 @@
+class Q9 {
+    static double calculateTotal(double a,double b) { return a+b; }
+    static double calculateTotal(double a,double b,double d) { return (a+b)*(1-d/100); }
+    static double calculateTotal(double a) { return a; }
+    public static void main(String[] args) {
+        System.out.println(calculateTotal(100));
+        System.out.println(calculateTotal(100,200));
+        System.out.println(calculateTotal(100,200,10));
+    }
+}

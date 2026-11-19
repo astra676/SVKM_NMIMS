@@ -1,0 +1,8 @@
+class Q20 {
+    public static void main(String[] args) {
+        try { int a=Integer.parseInt(args[0]); System.out.println(10/a); System.out.println(new int[2][Integer.parseInt(args[1])][0]); }
+        catch(ArithmeticException e) { System.out.println("Arithmetic Exception"); }
+        catch(NumberFormatException e) { System.out.println("Number Format Exception"); }
+        catch(ArrayIndexOutOfBoundsException e) { System.out.println("Array Index Exception"); }
+    }
+}
